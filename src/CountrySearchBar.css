@@ -1,0 +1,88 @@
+.country-search-bar {
+  position: relative;
+  width: 400px;
+  margin: 50px auto;
+}
+
+.input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.country-search-bar input {
+  width: 100%;
+  padding: 15px 50px 15px 40px; /* Extra padding on the right and left for icons */
+  font-size: 16px;
+  border-radius: 50px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: #888;
+}
+
+.mic-icon {
+  position: absolute;
+  top: 50%;
+  right: 45px; /* Adjusted to be next to the lens icon */
+  transform: translateY(-50%);
+  color: #888;
+  cursor: pointer;
+}
+
+.lens-icon {
+  position: absolute;
+  top: 50%;
+  right: 15px; /* Adjusted to be on the far right */
+  transform: translateY(-50%);
+  color: #888;
+  cursor: pointer;
+}
+
+.suggestions {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1;
+}
+
+.suggestions li {
+  padding: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.suggestions li:hover {
+  background-color: #f0f0f0;
+}
+
+.country-details {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #fafafa;
+}
+
+.country-details h3 {
+  margin-top: 0;
+}
+
+.country-details p {
+  margin: 5px 0;
+}
